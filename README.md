@@ -37,5 +37,5 @@ you can annotate the images using an annotation tool like labelImg. But it will 
 #### Use [python annotation script to generate xml annotations](annotation.py)
 The Xml files should look like :
 ```xml
-<annotation verified="yes"><folder>celebrityDB</folder><filename>1d9k49.jpeg</filename><path>/media/emna/datapartition/tutos/celebrityDB/dewayneJohnson/1d9k49.jpeg</path><source><database>Emna Amor</database></source><size><width>104</width><height>142</height><depth>3</depth></size><segmented>0</segmented><object><name>dewayneJohnson</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>2</xmin><ymin>34</ymin><xmax>133</xmax><ymax>99</ymax></bndbox></object></annotation>
+&lt;annotation verified="yes"&gt;<folder>celebrityDB</folder><filename>1d9k49.jpeg</filename><path>/media/emna/datapartition/tutos/celebrityDB/dewayneJohnson/1d9k49.jpeg</path><source><database>Emna Amor</database></source><size><width>104</width><height>142</height><depth>3</depth></size><segmented>0</segmented><object><name>dewayneJohnson</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>2</xmin><ymin>34</ymin><xmax>133</xmax><ymax>99</ymax></bndbox></object></annotation>
 ```
