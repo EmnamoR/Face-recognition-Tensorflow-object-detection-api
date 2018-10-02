@@ -63,3 +63,6 @@ The Xml files should look like :
     </object>
 </annotation>
 ```
+## 3. Label Map preparation
+After annotating the pictures we have, We need to generate a csv file containing all pictures details / classes. 
+ #### Use  [python xml to csv script to generate the csv file](xml_to_csv.py)
