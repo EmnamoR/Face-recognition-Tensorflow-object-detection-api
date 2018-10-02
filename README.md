@@ -67,14 +67,9 @@ The Xml files should look like :
 After annotating the pictures we have, We need to generate a csv file containing all pictures details / classes. 
  #### Use  [python xml to csv script to generate the csv file](xml_to_csv.py)
 The csv File should look like this:
-| filename | width | height | class |xmin | ymin |xmax | ymax |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1jth1461.jpeg | 76 | 105 | kimKardashian |10 | 30 |89 | 59 |
-| wenn33850496.jpg | 470 | 654 | AndySerkis |52 | 142 |494 | 352 |
-
 
 
 | filename | width | height | class | xmin | ymin | xmax | ymax | 
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1jth1461.jpeg | 76 | 105 | kimKardashian | 10 | 30 | 89 | 59 |
-| git diff | Show file differences that haven't been staged | List all new or modified files | --- | --- | --- | --- | --- |
+| wenn33850496.jpg | 470 | 654 | AndySerkis | 52 | 142 | 494 | 352 |
