@@ -80,5 +80,19 @@ Then we need to split the data into train and test using [this python notebook ]
 ### 4. TF-Record Creation 
 To train our model, we need to convert the data to Tensorflow file format called Tfrecords. Most of the batch operations aren’t done directly from images, rather they are converted into a single tfrecord file (images which are numpy arrays and labels which are a list of strings).
 #### WHAT IS TFRECORD?
-> “… TFRECORD is an approach that convert whatever data you have into a supported format. This approach makes it easier to mix and match data sets and network architectures. The recommended format for TensorFlow is a TFRecords file containing tf.train.Example protocol buffers (which contain Features as a field).“ >
-v
+```
+ “… TFRECORD is an approach that convert whatever data you have into a supported format. This approach makes it easier to mix and match data sets and network architectures. The recommended format for TensorFlow is a TFRecords file containing tf.train.Example protocol buffers (which contain Features as a field).“
+```
+Use this [python script](generate_tfrecords.py) to generate te tf records files (train.record  and test.record) 
+```
+Usage:
+  # From tensorflow/models/
+  # Create train data:
+  python generate_tfrecord.py --csv_input=train.csv  --output_path=data/train.record
+
+  # Create test data:
+  python generate_tfrecord.py --csv_input=test.csv  --output_path=data/test.record
+```
+###### Note do not forget to edit the generate_tfrecords file with your own labels.
+
+### 5. Label Map preparation
