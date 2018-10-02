@@ -168,3 +168,16 @@ python object_detection/model_main.py \
 - to keep training infinetly, remove NUM_TRAIN_STEPS=50000
 
 ```
+```
+
+# From tensorflow/models/research/
+INPUT_TYPE=image_tensor
+PIPELINE_CONFIG_PATH={path to pipeline config file}/data/ssd_mobilenet_v1_coco.config
+TRAINED_CKPT_PREFIX={path to model directory}/ssd_mobilenet_v1_coco_2018_01_28/model.ckpt-num
+EXPORT_DIR={path to folder that will be used for export}
+python object_detection/export_inference_graph.py \
+    --input_type=${INPUT_TYPE} \
+    --pipeline_config_path=${PIPELINE_CONFIG_PATH} \
+    --trained_checkpoint_prefix=${TRAINED_CKPT_PREFIX} \
+    --output_directory=${EXPORT_DIR}
+```
