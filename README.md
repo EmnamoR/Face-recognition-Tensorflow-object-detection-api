@@ -86,13 +86,61 @@ To train our model, we need to convert the data to Tensorflow file format called
 Use this [python script](generate_tfrecords.py) to generate te tf records files (train.record  and test.record) 
 ```
 Usage:
-  # From tensorflow/models/
   # Create train data:
-  python generate_tfrecord.py --csv_input=train.csv  --output_path=data/train.record
+  python generate_tfrecords.py --csv_input=train.csv  --output_path=data/train.record
 
   # Create test data:
-  python generate_tfrecord.py --csv_input=test.csv  --output_path=data/test.record
+  python generate_tfrecords.py --csv_input=test.csv  --output_path=data/test.record
 ```
-###### Note do not forget to edit the generate_tfrecords file with your own labels.
+###### Note: do not forget to edit the generate_tfrecords file with your own labels.
 
 ### 5. Label Map preparation
+Use the same order you appended the labels in the generate_tfrecords python script 
+###### Note: label map id should be diffirent to 0 !
+```
+item {
+  id: 1
+  name: 'AndySerkis'
+}
+
+item {
+  id: 2
+  name: 'dewayneJohnson'
+}
+item {
+  id: 3
+  name: 'drake'
+}
+
+item {
+  id: 4
+  name: 'jayZ'
+}
+
+item {
+  id: 5
+  name: 'justinBieber'
+}
+
+item {
+  id: 6
+  name: 'kimKardashian'
+}
+
+
+item {
+  id: 7
+  name: 'kimKardashian'
+}
+
+item {
+  id: 8
+  name: 'tomHanks'
+}
+
+item {
+  id: 9
+  name: 'willSmith'
+}
+
+```
