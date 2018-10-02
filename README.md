@@ -17,7 +17,9 @@ Today, we will see together how tensorflow can recognize people. In this post I'
 ## Data set Download
 
 You can crawl celebrity pictures from google images if you don't have a ready Data set. Try to order the data set as bellow:
-```ruby
+
+```
+
 CelebrityDB/
     TomHanks/
         img001.jpg
@@ -28,5 +30,6 @@ CelebrityDB/
         will-smith-pic.jpg
         ...
     ... 
-    ```
-xxxx
+
+```
+dfd
