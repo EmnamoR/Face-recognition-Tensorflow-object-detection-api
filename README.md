@@ -148,3 +148,21 @@ item {
 We will use [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz) to train our face recognition model.
 #### Do not forget to edit [the ssd_mobilenet_v1_coco.config file](data/ssd_mobilenet_v1_coco.config) with the number of classes( 9 in my case) , ssd_mobilenet_v1_coco model.ckpt under ssd_mobilenet_v1_coco_2018_01_28, the train record path , test record path and the label.pbtxt path.
 
+### 7. Training
+# From the tensorflow/models/research/ directory
+
+```
+PIPELINE_CONFIG_PATH={path to pipeline config file}/data/ssd_mobilenet_v1_coco.config
+MODEL_DIR={path to model directory}/ssd_mobilenet_v1_coco_2018_01_28
+NUM_TRAIN_STEPS=50000
+SAMPLE_1_OF_N_EVAL_EXAMPLES=1
+python object_detection/model_main.py \
+    --pipeline_config_path=${PIPELINE_CONFIG_PATH} \
+    --model_dir=${MODEL_DIR} \
+    --num_train_steps=${NUM_TRAIN_STEPS} \
+    --sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
+    --alsologtostderr
+    
+- to keep training infinetly, remove NUM_TRAIN_STEPS=50000
+
+```
