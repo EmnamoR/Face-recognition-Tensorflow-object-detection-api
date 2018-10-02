@@ -33,4 +33,4 @@ CelebrityDB/
 
 ```
 ## 2. Image Annotation
-
+you can annotate the images using an annotation tool like labelImg. But it will take a lot of time. That's why i created a script to generate xml files(exactly like PASCAL VOC). I used opencv to detect faces but, you can change it with any other tool( i recommend dlib or a neural network face detection model which are much more accurate than opencv).
