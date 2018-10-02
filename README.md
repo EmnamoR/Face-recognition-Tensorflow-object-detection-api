@@ -75,8 +75,9 @@ The csv File should look like this:
 | 1jth1461.jpeg | 76 | 105 | kimKardashian | 10 | 30 | 89 | 59 |
 | wenn33850496.jpg | 470 | 654 | AndySerkis | 52 | 142 | 494 | 352 |
 
-Then we need to split the data into train and test using [The notebook ](split_data.ipynb.ipynb).
+Then we need to split the data into train and test using [this python notebook ](split_data.ipynb.ipynb).
 
 ### 4. TF-Record Creation 
-Tensorflow does 
-
+To train our model, we need to convert the data to Tensorflow file format called Tfrecords. Most of the batch operations aren’t done directly from images, rather they are converted into a single tfrecord file (images which are numpy arrays and labels which are a list of strings).
+#### WHAT IS TFRECORD?
+> “… approach is to convert whatever data you have into a supported format. This approach makes it easier to mix and match data sets and network architectures. The recommended format for TensorFlow is a TFRecords file containing tf.train.Example protocol buffers (which contain Features as a field).“
