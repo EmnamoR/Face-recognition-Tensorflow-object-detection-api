@@ -75,7 +75,7 @@ The csv File should look like this:
 | 1jth1461.jpeg | 76 | 105 | kimKardashian | 10 | 30 | 89 | 59 |
 | wenn33850496.jpg | 470 | 654 | AndySerkis | 52 | 142 | 494 | 352 |
 
-Then we need to split the data into train and test using (split_data.ipynb.ipynb).
+Then we need to split the data into train and test using [The notebook ](split_data.ipynb.ipynb).
 
 ### 4. TF-Record Creation 
 Tensorflow does 
