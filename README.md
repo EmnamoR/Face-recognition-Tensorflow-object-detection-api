@@ -146,3 +146,5 @@ item {
 ```
 ### Pipeline Configuration
 We will use [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz) to train our face recognition model.
+#### Do not forget to edit [the ssd_mobilenet_v1_coco.config file](data/ssd_mobilenet_v1_coco.config) with the number of classes( 9 in my case) , ssd_mobilenet_v1_coco model.ckpt under ssd_mobilenet_v1_coco_2018_01_28, the train record path , test record path and the label.pbtxt path.
+
