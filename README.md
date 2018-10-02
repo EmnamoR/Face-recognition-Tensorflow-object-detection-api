@@ -149,9 +149,10 @@ We will use [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object
 #### Do not forget to edit [the ssd_mobilenet_v1_coco.config file](data/ssd_mobilenet_v1_coco.config) with the number of classes( 9 in my case) , ssd_mobilenet_v1_coco model.ckpt under ssd_mobilenet_v1_coco_2018_01_28, the train record path , test record path and the label.pbtxt path.
 
 ### 7. Training
-# From the tensorflow/models/research/ directory
 
 ```
+# From the tensorflow/models/research/ directory
+
 PIPELINE_CONFIG_PATH={path to pipeline config file}/data/ssd_mobilenet_v1_coco.config
 MODEL_DIR={path to model directory}/ssd_mobilenet_v1_coco_2018_01_28
 NUM_TRAIN_STEPS=50000
