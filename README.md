@@ -74,7 +74,7 @@ The csv File should look like this:
 
 
 
-| Command | width | height | class | Description | Description | Description | Description | 
+| filename | width | height | class | xmin | ymin | xmax | ymax | 
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| git status | List all new or modified files | List all new or modified files | --- | --- | --- | --- | --- |
+| 1jth1461.jpeg | 76 | 105 | kimKardashian | 10 | 30 | 89 | 59 |
 | git diff | Show file differences that haven't been staged | List all new or modified files | --- | --- | --- | --- | --- |
