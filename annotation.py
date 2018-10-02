@@ -44,7 +44,7 @@ for subdir, dirs, files in os.walk(os.getcwd()):
                         ET.SubElement(root, "path").text = img_path
 
                         source=ET.SubElement(root, "source")
-                        ET.SubElement(source, "database").text = "Ryde GmbH"
+                        ET.SubElement(source, "database").text = "Emna Amor"
 
                         size=ET.SubElement(root, "size")
                         ET.SubElement(size, "width").text = str(w)
