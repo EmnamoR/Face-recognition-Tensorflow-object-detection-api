@@ -168,6 +168,7 @@ python object_detection/model_main.py \
 - to keep training infinetly, remove NUM_TRAIN_STEPS=50000
 
 ```
+### 8. Exporting Graph
 ```
 
 # From tensorflow/models/research/
@@ -181,3 +182,4 @@ python object_detection/export_inference_graph.py \
     --trained_checkpoint_prefix=${TRAINED_CKPT_PREFIX} \
     --output_directory=${EXPORT_DIR}
 ```
+You can use the object detection notebook to make prediction (change the model download section with your model path)
